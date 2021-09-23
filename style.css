@@ -81,7 +81,7 @@ body {
   
   .wrapper form.valid button,
   .wrapper form.invalid button {
-    padding: 12px 36px;
+    padding: 13px 36px;
   }
   
   .wrapper form.invalid .error-msg {
@@ -134,7 +134,7 @@ body {
   }
   
 .wrapper button {
-    padding: 12px 32px;
+    padding: 13px 36px;
     text-align: center;
     background: Linear-gradient(135deg, #f8bfbf, #ee8c8c);
     color: #fff;
