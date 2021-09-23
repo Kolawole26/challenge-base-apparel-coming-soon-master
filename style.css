@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, white 0%, #fff5f5 60%) no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.logo {
+    background-image: url(/images/hero-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin-top: 84px;
+    margin-bottom: 35px;
+}
+
+.logo img {
+    position: relative;
+    bottom: 84px;
+    margin: 30px;
+    max-width: 100px;
+}
+
+.wrapper {
+    padding: 30px 30px;
+    max-width: 480px;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-weight: 300;
+    color: #ce9797;
+}
+
+.header h1 span {
+    color: #413a3a;
+    font-weight: 600;
+    display: block;
+}
+
+.content {
+    text-align: center;
+}
+.content p {
+    color: #ce9797;
+    line-height: 1.6rem;
+    font-size: 14px;
+    margin-bottom: 30px;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+}
+
+.wrapper form {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .wrapper form.valid #email {
+    border: 1px solid #0f0;
+  }
+  
+  .wrapper form.invalid #email {
+    border: 1px solid #f00;
+  }
+  
+  .wrapper form.valid button,
+  .wrapper form.invalid button {
+    padding: 12px 36px;
+  }
+  
+  .wrapper form.invalid .error-msg {
+    display: block;
+    color: #f00;
+    font-size: 0.875rem;
+    margin: 8px 0 0 25px;
+  }
+  
+  .wrapper form.invalid .email-input::after {
+    content: "";
+    position: absolute;
+    right: 95px;
+    top: 12px;
+    height: 24px;
+    width: 24px;
+    background: url(./images/icon-error.svg);
+    background-size: cover;
+    z-index: 10;
+  }
+
+  .wrapper input {
+      padding: 15px 0 15px 20px;
+      outline: none;
+      border: 1px solid #ce9797;
+      border-radius: 50px;
+      background: transparent;
+      width: 98%;
+      font-size: 14px;
+  }
+
+  .wrapper input::-webkit-input-placeholder {
+    color: #ce9797;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .container input:-ms-input-placeholder {
+    color: #ce9797;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .container input::-ms-input-placeholder {
+    color: #ce9797;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .container input::placeholder {
+    color: #ce9797;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+.wrapper button {
+    padding: 12px 26px;
+    text-align: center;
+    background: Linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.wrapper button:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 12px 36px;
+    cursor: pointer;
+  }
+
+@media screen and (min-width: 992px) {
+  
+  body {
+    background: url(./images/hero-desktop.jpg) no-repeat right center, url(./images/bg-pattern-desktop.svg) no-repeat left center;
+    background-size: contain, cover;
+    background-position-x: 100%;
+    background-color: #fff5f5;
+    display: block;
+  }
+
+  .logo {
+    all: unset;
+  }
+
+  .logo img {
+    max-width: 164px;
+    position: unset;
+    margin: 60px 60px 60px 90px;
+  }
+
+  .wrapper {
+    margin-left: 90px;
+    padding: 0 0 30px 0;
+    max-width: 360px;
+  }
+
+  .wrapper .header {
+    text-align: left;
+    font-size: 24px;
+    line-height: 3.2rem;
+  }
+  .header h1 {
+    font-weight: 300;
+    color: #ce9797;
+
+}
+
+.header h1 span {
+    color: #413a3a;
+    font-weight: 600;
+    display: block;
+}
+
+.content {
+    text-align: left;
+}
+.content p {
+    
+    font-size: 15px;
+    margin-bottom: 30px;
+    letter-spacing: -0.6px;
+    padding: 0;
+}
+
+.wrapper form.valid button,
+  .wrapper form.invalid button {
+    padding: 17px 45px;
+  }
+  .wrapper form.invalid .email-input::after {
+    right: 160px;
+    top: 16px;
+  }
+
+  .wrapper input {
+    padding: 18px;
+    width: 90%;
+    padding-left: 40px;
+  }
+
+  .wrapper button {
+    right: 24px;
+    padding: 17px 40px;
+    
+  }
+
+  .wrapper button:hover {
+    padding: 17px 42px;
+   
+  }
+}
+
+
+@media screen and (min-width: 1240px) {
+  body {
+    background: url(./images/hero-desktop.jpg) no-repeat right center, url(./images/bg-pattern-desktop.svg) no-repeat left center;
+    background-size: contain, cover;
+    background-position-x: 100%;
+    background-color: #fff5f5;
+    display: block;
+  }
+
+  .logo {
+    all: unset;
+  }
+
+  .logo img {
+    max-width: 164px;
+    position: unset;
+    margin: 60px 164px;
+  }
+
+  .wrapper {
+    margin-left: 164px;
+    padding: 0 0 40px 0;
+    max-width: 446px;
+  }
+
+  .wrapper .header {
+    text-align: left;
+    font-size: 28px;
+    line-height: 3.5rem;
+  }
+
+
+.content p {
+    
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: -0.6px;
+    padding: 0;
+}
+
+.wrapper form.valid button,
+  .wrapper form.invalid button {
+    padding: 17px 45px;
+  }
+  .wrapper form.invalid .email-input::after {
+    right: 160px;
+    top: 16px;
+  }
+
+  .wrapper input {
+    padding: 19px;
+    width: 90%;
+    padding-left: 40px;
+  }
+
+  .wrapper button {
+    right: 24px;
+    padding: 19px 40px;
+    
+  }
+
+  .wrapper button:hover {
+    padding: 20px 45px;
+   
+  }
+
+
+}
