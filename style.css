@@ -211,7 +211,7 @@ body {
 
 .wrapper form.valid button,
   .wrapper form.invalid button {
-    padding: 17px 45px;
+    padding: 18px 40px;
   }
   .wrapper form.invalid .email-input::after {
     right: 160px;
@@ -226,7 +226,7 @@ body {
 
   .wrapper button {
     right: 24px;
-    padding: 17px 40px;
+    padding: 18px 40px;
     
   }
 
